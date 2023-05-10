@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'register.css' %}">
+    <title>Register</title>
+</head>
+<body>
+    <form class="form" method="POST" action="{% url 'register' %}">
+        {% csrf_token %}
+
+        <span class="title">Subscribe to EmailEase.</span>
+        <p class="description">Make sure you get your announcements in time.Try EmailEase today and experience the power of streamlined communication.</p>
+        
+        
+            <input placeholder="Enter your name" type="text" id="name" name="name" required>
+        <div>
+            
+            <input placeholder="Enter your email" type="email" name="email" id="email-address">
+            
+            <button type="submit">Subscribe</button>
+          </div>
+      </form>
+      
+</body>
+</html>

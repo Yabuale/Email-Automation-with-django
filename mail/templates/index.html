@@ -1,0 +1,145 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'home-style.css' %}">
+   
+    <title>EmailEase</title>
+</head>
+<body>
+    <header>
+        <div class="logo-div">
+            <div class="logo-warper">
+        <h2 class="logo">EmailEase</h2>
+            </div>
+        </div>
+        <nav class="navbar">
+            <ul class="menu">
+              
+              <li><a href="#about">About</a></li>
+
+              <li><a href="#">Contact</a></li>
+              
+              <li><a href="/register">Register</a></li>
+              
+            </div>
+            </ul>
+           
+          </nav>
+          
+    </header> 
+    <br/>
+          <br/>
+          <br/>
+    <div class="container">
+        <br/>
+        <br/>
+    
+        <div class="colomn ">
+        <div data-aos="fade-up" data-aos-duration="2300" class="col1">
+            <img src="{% static 'images/announcement.png' %}">
+        </div>
+        <div data-aos="zoom-in-left" data-aos-duration="2500" class="col2">
+           <h2>Streamline Company Updates with EmailEase</h2><br/>
+           <p>With EmailEase, sending company updates is a breeze. Our platform simplifies the process, 
+            allowing businesses to send automated emails to all their employees with just a few clicks. 
+            Whether it's a new product launch, company-wide meeting, or a quick update, our streamlined system makes 
+            it effortless.
+             Say goodbye to time-consuming email chains and hello to streamlined communication with EmailEase.</p>
+                        
+        </div>
+        </div>
+        
+        <div class="colomn ">
+            
+            <div data-aos="zoom-in-right" data-aos-duration="2000" class="col2">
+                <h2>Boost Productivity with EmailEase</h2><br/>
+                <p>EmailEase streamlines communication and saves time for businesses.
+                     Send automated emails to all your employees with ease, ensuring everyone is on the same page instantly.
+                      Say goodbye to time-consuming individual emails and hello to the efficiency of EmailEase. With more time saved,
+                       your team can focus on growing your business. 
+                    Try EmailEase today and experience the power of streamlined communication.</p>
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1800"  class="col1">
+                <img src="{% static 'images/time-management.png' %}">
+            </div>
+            
+            </div>
+       
+        <div class="colomn">
+            <div data-aos="fade-up" data-aos-duration="1800" class="col1">
+                <img  src="{% static 'images/news.png' %}">
+            </div>
+            <div data-aos="zoom-in-left" data-aos-duration="2000" class="col2">
+                <h2>Automate Communication with EmailEase</h2><br/>
+                <p>With EmailEase, sending important emails is just one click away. 
+                    Our platform simplifies the process of email communication, allowing businesses to send 
+  automated emails to all their employees with ease. Whether it's a new product launch or a company-wide announcement, our streamlined system makes it effortless. Say goodbye to composing individual emails and hello to the convenience of EmailEase.
+                     Try it today and see how easy it is to send emails with just one click!</p>
+            </div>
+            </div>
+        
+        <div class="colomn ">
+            
+            <div data-aos="zoom-in-right" data-aos-duration="2000" class="col2">
+                <h2>Sign Up for EmailEase</h2><br/>
+               
+             <p>Sign up for EmailEase today and start streamlining your communication with just one click!</p>
+             <br/>
+             <div class="b">
+             <button>
+                <span> <a style="color:white; text-decoration: none;"  class="button-link" href="/register">Register</a> </span>
+              </button>
+            </div>
+            </div>
+            
+            
+            <div data-aos="fade-up" data-aos-duration="1800" class="col1">
+                <img  src="{% static 'images/sign-up.png' %}">
+            </div>
+            
+            </div>
+            <div  data-aos="fade-up"
+            data-aos-duration="2500" class="about" id="about">
+         
+                <h1>About us</h1>
+    
+                <p>Welcome to EmailEase, the ultimate platform designed to simplify communication 
+                    for businesses of all sizes. Our team of skilled developers has created an innovative 
+                    website that allows companies to easily send automated emails to their employees.</p>
+                    <p>Traditional email communication can be time-consuming and inefficient, especially when 
+                        it comes to reaching a large number of employees. That's where [Your Website Name] comes in -
+                         our platform streamlines the process and saves businesses time and effort.</p>
+                         
+                         <p>Our website features a user-friendly interface that allows companies to quickly send 
+                            announcements and updates to their employees with just a few clicks. Our automated email 
+                            system ensures that everyone on the email list receives the message at the same time, 
+                            eliminating the need for time-consuming email chains.</p>
+                            
+                            <p>At EmailEase, we're passionate about helping businesses succeed. 
+                                That's why we're constantly updating our platform with new features and improvements 
+                                to ensure that our users have the best possible experience. Our goal is to help businesses
+                                 streamline their 
+                                communication and focus on what really matters - growing their business.</p>
+                                <p>So what are you waiting for? Sign up today and experience the power of EmailEase for yourself!</p>
+            
+                                <button>
+                                    <span> <a style="color:white; text-decoration: none;"  class="button-link" href="/register">Register</a> </span>
+                                  </button>
+            
+                            </div>
+     <br/>
+    
+        
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"> </script>
+    <script> AOS.init();  </script>
+</body>
+</html>

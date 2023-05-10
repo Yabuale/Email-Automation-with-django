@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+        background: url("images/register.svg")no-repeat center center fixed;
+        background-size: cover;
+    } 
+    .card{
+        position: fixed;
+      top: 50%;
+      left: 50%;
+     transform: translate(-50%, -50%);
+     min-width: 70%;
+     max-width: 320px;
+     min-height: 65%;
+     max-height: 320px;
+    background: #606c88;
+    background: -webkit-linear-gradient(to right, #3f4c6b, #606c88);
+    background: linear-gradient(to right, #3f4c6b, #606c88);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    }
+    input,textarea{
+    width:90%;
+    outline: none;
+    line-height: 1.5rem;
+    font-size: 0.875rem;
+    color: rgb(255 255 255 );
+    padding: 0.5rem 0.875rem;
+    background-color: rgb(255 255 255 / 0.05);
+    border: 1px solid rgba(253, 253, 253, 0.363);
+    border-radius: 0.375rem;
+    margin: 10px auto;
+    flex: 1 1 auto;
+    }
+    textarea{
+        height:300px;
+    }
+    input::placeholder {
+        color: rgb(216, 212, 212);
+      }
+     input:focus {
+        border: 1px solid rgb(99 102 241);
+      }
+    textarea::placeholder {
+        color: rgb(216, 212, 212);
+      }
+     textarea:focus {
+        border: 1px solid rgb(99 102 241);
+      }
+      .card form button{
+        color: #fff;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding: 0.625rem 0.875rem;
+    background-color: rgb(99 102 241);
+    border-radius: 0.375rem;
+    border: none;
+    outline: none;
+      }
+      .button{
+        display:flex;
+        justify-content: end;
+      }

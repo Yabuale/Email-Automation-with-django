@@ -1,0 +1,162 @@
+header h1,h2,p{
+    margin: 0;
+    padding: 0;
+   
+}
+h1 {
+    font-family: Oswald, sans-serif;
+    font-size: 40px;
+    color:#202941;
+  }
+  
+  h2 {
+    font-family: Open Sans, sans-serif;
+    font-size: 28px;
+    color:#1d2d44;
+  }
+  
+  p {
+    font-family: Lato, sans-serif;
+    font-size: 16px;
+    color:#2a425c;
+  }
+  
+  li {
+    font-family: Roboto, sans-serif;
+  }
+body{
+    margin: 0;
+    background: url("images/bg.svg")no-repeat center center fixed;
+    background-size: cover;
+    
+    
+}
+
+header{
+   
+    display: flex;
+    justify-content: space-between;
+    
+    background: linear-gradient(to bottom, #3c5e8a, #597fb1);
+    color:#fcf3f3;
+    opacity: 1;
+    
+  }
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+  }
+  .logo-div{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+}
+  
+  .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin: 0 10px;
+  }
+  header h2{
+    color:#fcf3f3;
+  }
+  .menu li a {
+    color:#fcf3f3;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .menu li a:hover {
+    color:#d1c8c8;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  .container{
+    width: 80%;
+    margin:auto;
+    background-color: #ffffff10;
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(7px);
+  }
+  .about{
+    text-align: center;
+    margin: 50px auto 150px;
+  }
+  .about p{
+  width: 700px;
+  word-wrap: break-word;
+  
+  margin: 20px auto;
+  }
+  .colomn{
+    height:400px;
+    display: flex;
+    margin: 50px auto;
+  }
+  .col1{
+    width:50%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .col2{
+    width:50%;
+    display:flex;
+    flex-direction: column;
+     text-align: center;
+    justify-content: center;
+    
+  }
+  img{
+    width:60%;
+    height:90%;
+    
+  }
+  button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #3d405b;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 17px;
+    padding: 16px;
+    width: 130px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+   }
+  
+   button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+   }
+   
+   button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+   }
+   
+   button:hover span {
+    padding-right: 15px;
+   }
+   
+   button:hover span:after {
+    opacity: 1;
+    right: 0;
+   }
+  

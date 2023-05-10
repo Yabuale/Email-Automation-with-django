@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'data.css' %}">
+  <title>Admin</title>
+</head>
+<body>
+  <header>
+    <div class="logo-div">
+        <div class="logo-warper">
+    <h2 class="logo">EmailEase</h2>
+        </div>
+    </div>
+    <nav class="navbar">
+        <div class="menu">
+          
+          
+          <li><a href="/send">Compose</a></li>
+          <li> 
+            <form method="POST" action="{% url 'logout' %}">
+            {% csrf_token %}
+            <button type="submit">logout</button>
+          </form></li>
+            
+          
+        </div>
+        
+       
+      </nav>
+      
+</header> 
+<div class="main"> 
+<div class="data">
+  <table border="2px">
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+    </tr>
+   
+      {% for x in mymembers %}
+      <tr>
+      <td> {{ x.firstname }}</td>
+      <td>{{ x.email }} </td> 
+      </tr>
+    {% endfor %}
+    
+   </table>
+  
+</div>
+<div class="forms">
+<div class="register"> 
+  <form method="POST" action="{% url 'admin_register' %}">
+    {% csrf_token %}
+    <input placeholder="Name" type="text" id="name" name="name" required><br/>
+    <br/>
+    
+    <input placeholder="Email" type="email" name="email" id="email-address"><br/><br/>
+            
+            <button type="submit">REGISTER</button>
+  </form>
+</div>
+<div class="delete">
+  <form method="POST" action="{% url 'admin_delete' %}">
+    {% csrf_token %}
+    <input placeholder="Email" type="email" name="email" id="email-address"><br/><br/>
+            
+            <button type="submit">DELETE</button>
+  </form>
+</div>
+</div>
+</div>
+  
+
+</body>
+</html>

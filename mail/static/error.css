@@ -1,0 +1,31 @@
+body{
+    margin: 0;
+    background: url("images/error.svg")no-repeat center center fixed;
+    background-size: cover;
+}
+.main{
+    position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ededf0;
+  text-align: center;
+}  
+h2{
+    margin: 0;
+}
+button {
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding: 0.625rem 0.875rem;
+    background-color: rgb(224, 99, 241);
+    border-radius: 0.375rem;
+    border: none;
+    outline: none;
+  }
+  button a{
+    text-decoration: none;
+    color: #fff;
+  }

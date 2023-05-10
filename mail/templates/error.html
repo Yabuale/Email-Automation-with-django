@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'error.css' %}">
+    <title>ERR</title>
+</head>
+<body>
+
+    <div class="main"> 
+   
+      <h1>ERROR</h1>
+      <h2>Something went wrong</h2>
+      <h2>possible solutions</h2>
+      <ul>
+        <li>turn off your vpn</li>
+        <li>check your password</li>
+        <li>check your internet</li>
+        <li>contact your email service provider</li>
+      </ul>
+       <button><a href="/mail">Return</a></button>
+    </div>
+</body>
+</html>
